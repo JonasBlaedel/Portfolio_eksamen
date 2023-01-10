@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+    <title>02.01.02</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="body">
+    <button onclick="topFunction()" id="scrolltop" title="Go to top">&#8593;</button>
+    <header>
+      <a href="../index.html" class="logo-index2">
+        <span id="home">Jonas Lundberg Blædel</span>
+      </a>
+      <section class="navigation">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Forside</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="active" href="../projekter.html">Projekter</a>
+                <div class="dropdown-content">
+                  <a href="ssd.html">Studiestartsprøve</a>
+                  <a href="emnesite.html">Emnesite</a>
+                  <a href="uxloesning.html">UX Løsning</a>
+                  <a href="uxpitch.html">UX Pitch</a>
+                  <a href="temaopg.html">Temaopgave</a>
+                  <a href="pilotsite.html">Pilotsite</a>
+                  <a href="redesign.html">Redesign</a>
+                  <a href="portfolio.html">Portfolio</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="../ommig.html">Om Mig</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="case">
+          <div class="project_case">
+            <span class="subtitle">02.01.02</span>
+            <h1>Studiestartsprøve</h1>
+          </div>
+          <div class="opgave_case">
+            <span class="subtitle">Opgavefordeling</span>
+            <h2>Programmør<br />Grafisk manipulering</h2>
+          </div>
+          <div class="tema_case">
+            <span class="subtitle">Tema</span>
+            <h2>Tema 2</h2>
+          </div>
+        </div>
+        <div class="themedescrp">
+          <p>I Tema 2 fik vi en grundlæggende forståelse for og gjorde brug af de mest anvendte metoder, begreber og programmer i en multimediedesigners “værktøjskasse”.</p>
+
+          <p>
+            Vi blev introduceret til nogle grundlæggende faglige begreber, når man som multimediedesigner arbejder med diverse brugergrænseflader, digitale former for kommunikation og responsive designs. <br />
+            Dette indebærer en generel forståelse for opsætning af websider, at arbejde i grafik og billedbehandlingsprogrammer samt at opsætte tekst og billeder til mockups, stiletyles, wireframes.<br />
+            I den forbindelse lærte vi også om metoder til digitalt design, som diverse design konventioner - stilarter, genrer, stilperioder mm. - forståelse og brug af forskellige gestalt principper og ikke mindst farveharmonier.
+          </p>
+        </div>
+      </div>
+      <div class="project_descrp">
+        <p>
+          I dette projekt skulle jeg udvikle et responsivt website bestående af 5 sider ud fra afleveret tekst, billeder, wireframe og layoutdiagram. Udseendet skulle følge wireframet, og det strukturelle layout for den enkelte side skulle opsættes
+          efter layoutdiagrammet med en detaljeret opsætning af de strukturelle HTML elementer. <br />
+          Websitet udførtes ved hjælp af CSS grid, flex og ikke mindst media queries - essentielt for det responsive aspekt. Samtidig skulle websitet gøre brug af forskellige farver, have to forskellige fonte samt inkludere meta-tagget; "meta
+          name="robots" content="noindex"" i head-elementet, så robotter ikke automatisk inlkuderede det i søgemaskiner.<br />
+          Desuden skulle websitets HTML validere uden fejl.
+        </p>
+      </div>
+      <hr />
+      <div class="case_descrp">
+        <div class="case_descrp_text">
+          <p>
+            Den responsive hjemmeside skulle tage udgangspunkt i det tidligere mobilsite. Jeg løste opgaven ved først at få et overblik over det udleverede wireframe og layoutdigram. Gennem wireframet kunne jeg se det visuelle design opnået med CSS,
+            og via Layout Diagrammet vidste jeg hvordan jeg skulle opbygge HTML strukturen.
+          </p>
+
+          <p>
+            Med udgangspunkt i ovenstående, startede jeg med at oprette de fem forskellige html-sider og html strukturens elementer med ‘parents’ og ‘children’ og navngav alle classes. <br />
+            Jeg tog så udgangspunkt i wireframen. Her var beskrevet hvilke tekst- og billedelementer der skulle befinde sig i diverse containers - såsom header-tags, paragraphs images osv. <br />
+            Nu kom det til at style websitet. Siden HTML kun er den grundlæggende struktur og konstruktion af websitet, skulle jeg bruge CSS til at style. CSS står for Cascading Style Sheet, og er et deklaratorisk sprog, hvilket betyder, at man
+            skaber deklarationer for diverse elementer - deklarationen der står nederst er den gældende for det enkelte element. Helt grundlæggende fungerer CSS sådan, at man styler en selector, som befinder sig i dit HTML dokument. Ved at give din
+            selector en property med en dertilhørende value, skaber du et andet udseende i modsætnings til din browser standard deklaration.
+          </p>
+
+          <p>
+            Altså stylede jeg HTML dokumentet og igen tog jeg udgangspunkt i wireframet så alle container var placeret på deres rigtige pladser. <br />
+            I header elementet brugte jeg CSS grid i fem ens fractions og stylede mine grid-items med justify-items: center; så navigationen stod midt for. I main brugte jeg også CSS grid. Jeg stylede class’ne efter deres navne ex. .grid_3-5. Altså
+            skulle denne class have en property og value med display:grid; og grid-template-columns: 3fr 5fr;. Hvis ikke html strukturen forhindrede elementer i at sidde i den rigtige rækkefølge, måtte jeg bruge grid-row og grid-columns til at
+            manipluere deres positioner.
+          </p>
+
+          <p>
+            For at hjemmesiden blev responsiv, brugte jeg media queries med en betingelse, at CSS grid stylingen kun måtte gælde, hvis browser vidden var over 800px. På den måde forsvandt alt styling under 800px, og strukturen vendte tilbage til den,
+            der var opsat til mobilversionen er hjemmesiden.
+          </p>
+        </div>
+      </div>
+      <div class="visit_web_btn">
+        <h2>Vil du se casen?</h2>
+        <a class="button_case" href="https://lundbergbladel.dk/t2/website/pages/index.html" target="_blank">Besøg lundbergbladel.dk</a>
+      </div>
+      <div class="case_img">
+        <img src="../img/case1-1.jpg" alt="" />
+        <img src="../img/case1-2.jpg" alt="" />
+      </div>
+    </main>
+    <footer>
+      <script src="../js/burgermenu.js"></script>
+      <script src="../js/scrolltop.js"></script>
+    </footer>
+  </body>
+</html>

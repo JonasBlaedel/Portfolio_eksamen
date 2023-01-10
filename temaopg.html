@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+    <title>04.04.01</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="body">
+    <button onclick="topFunction()" id="scrolltop" title="Go to top">&#8593;</button>
+    <header>
+      <a href="../index.html" class="logo-index2">
+        <span id="home">Jonas Lundberg Blædel</span>
+      </a>
+      <section class="navigation">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Forside</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="active" href="../projekter.html">Projekter</a>
+                <div class="dropdown-content">
+                  <a href="ssd.html">Studiestartsprøve</a>
+                  <a href="emnesite.html">Emnesite</a>
+                  <a href="uxloesning.html">UX Løsning</a>
+                  <a href="uxpitch.html">UX Pitch</a>
+                  <a href="temaopg.html">Temaopgave</a>
+                  <a href="pilotsite.html">Pilotsite</a>
+                  <a href="redesign.html">Redesign</a>
+                  <a href="portfolio.html">Portfolio</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="../ommig.html">Om Mig</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="case">
+          <div class="project_case">
+            <span class="subtitle">04.04.01</span>
+            <h1>Temaopgave</h1>
+          </div>
+          <div class="opgave_case">
+            <span class="subtitle">Opgavefordeling</span>
+            <h2>
+              Programmør<br />Grafisk designer <br />
+              Konceptudvikler<br />UX & UI
+            </h2>
+          </div>
+          <div class="tema_case">
+            <span class="subtitle">Tema</span>
+            <h2>Tema 2</h2>
+          </div>
+        </div>
+        <div class="themedescrp">
+          <p>I Tema 4 lærte vi det grundlæggende bag programmeringssproget Javascript, der sammen med CSS skulle skabe animationer til et simpelt spil.</p>
+
+          <p>
+            I løbet af temaet skulle vi arbejde professionelt med formgivning af grafiske elementer, lære om spildesign og hvilke konventioner og UI elementer der engagerer brugeren. Vi fik indsigt i figurelementer og baggrundsdesign, samt en udvidet
+            forståelse og brug af Illustrator.<br />
+            Som forberedelse af selve spillet blev vi introduceret til aktivitets- og statemachinediagrammer der var behjælpelige til at planlægge spillets flow.<br />
+            Til sidst skulle spillet programmeres i samarbejde HTML, CSS og JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="project_descrp">
+        <p>
+          I denne opgave skulle vi designe og kode et interaktivt animeret spil. Desuden skulle spillet indsættes på et website som indeholdte min dokumentation af spillet. I spillet kunne man kun interagere med udvalgte elementer som bevægede sig i
+          faste mønstrer, og der skulle være både gode og dårlige ting man kunne klikke på. <br />
+          Derudover skulle spillet inluderer specifikke UI-elementer, som point der vises med tal, Liv der vises med tal og en tids animation.<br />
+          Sidst skulle spillet kunne slutte på måder - Når tiden er gået eller hvis du mister alle dine liv inden tiden er gået.
+        </p>
+      </div>
+      <hr />
+      <div class="case_descrp">
+        <div class="case_descrp_text">
+          <p>
+            Jeg indledte opgaven med idefasen. Her skulle jeg vælge koncept for spillet og min designstil. Jeg startede med at brainstorme ideer for spillets præmis og sporede mig ind på et spil i zoo, hvor man skal hjælpe løven med at spise sine
+            bøffer og undgå skraldet. Jeg valgte at lave mine illustrationer i flatdesign stilen med to-dimensionelle figurer i lyse farver og startede på mine papirprototyper. Her designede jeg de første sketches mine elementer i bevægelse, min
+            baggrund og figurer der skulle skabe en setting. Efterfølgende lavede jeg mit aktivitetsdiagram, der udformede mit spil-flow - hvilke elementer man må klikke på, hvordan man vinder, og hvad der sker hvis løven spiser for mange negative
+            elementer.
+          </p>
+
+          <p>
+            Nu var jeg klar til at rentegne mine figurer og interaktive elementer samt at rentegne jeg min baggrund og mine titelskærme. Dette gjorde jeg i Adobe illustrator hvorefter alle elementer blev eksporteret.<br />
+            Fokusset for baggrunden var et atmosfærisk perspektiv, med tydelig forgrund, mellemgrund og baggrund. Jeg fik er klart Focal point på mine titelskærme i form af min start og genstarts knapper. Jeg designede ligeledes mine UI-elementer i
+            stil med resten elementer på skærmen. Point var indikeret med bøffer, liv som hjerter, og timeren blev en horisontal bar der talte ned. Som nævnt var der designet store knapper og overskrifter på titelskærmene. <br />
+            Farverne til baggrunde og figurer var af rene og varme, der understøttede flatdesign stilen med dets simple og mindre detaljerede former.
+          </p>
+
+          <p>
+            Med ovenstående på plads skulle spillet nu kodes. Svg-filerne blev eksporteret og lagt i image mappen for spillet. Jeg brugte CSS til at positionere baggrunden, og de interaktive elementer på skærmen. Da det var klart skulle disse
+            elementer animeres, som blev gjort med Css transform der tillod elementer at roterer sig om en specifik akse, hvorefter keyframes blev opsat, så elementerne bevægede sig i vertikale baner. <br />
+            Nu indsatte jeg Javascriptet. Her brugte jeg en document.querySelector for at kunne interagerer med specifikke html elementer, hvorefter en addeventlistener triggerede en ny funktion afhængig af et givent event. Funktionerne kunne
+            tilknytte nye classes, der stoppede, animerede og genstartede html elementerne, eller starte nye funktioner. <br />
+            Nu kunne spilleren enten et point eller miste et liv.<br />
+            Ydermere implementerede jeg et if-statement på de dårlige elementer, som kunne starte endgame-funktionen. Hvis spillet var slut, og spilleren kun havde 9 point eller under, var spillet tabt. Fik spilleren 10point eller over, var spillet
+            vundet.
+          </p>
+        </div>
+      </div>
+      <div class="visit_web_btn">
+        <h2>Vil du se casen?</h2>
+        <a class="button_case" href="https://lundbergbladel.dk/t4/website/l%C3%B8vernespil.html" target="_blank">Besøg lundbergbladel.dk</a>
+      </div>
+      <div class="case_img gif">
+        <img src="../img/loevernes.gif" alt="lions gif" />
+      </div>
+    </main>
+    <footer>
+      <script src="../js/burgermenu.js"></script>
+      <script src="../js/scrolltop.js"></script>
+    </footer>
+  </body>
+</html>

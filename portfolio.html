@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+    <title>06.01.01</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="body">
+    <button onclick="topFunction()" id="scrolltop" title="Go to top">&#8593;</button>
+    <header>
+      <a href="../index.html" class="logo-index2">
+        <span id="home">Jonas Lundberg Blædel</span>
+      </a>
+      <section class="navigation">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Forside</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="active" href="../projekter.html"> Projekter</a>
+                <div class="dropdown-content">
+                  <a href="ssd.html">Studiestartsprøve</a>
+                  <a href="emnesite.html">Emnesite</a>
+                  <a href="uxloesning.html">UX Løsning</a>
+                  <a href="uxpitch.html">UX Pitch</a>
+                  <a href="temaopg.html">Temaopgave</a>
+                  <a href="pilotsite.html">Pilotsite</a>
+                  <a href="redesign.html">Redesign</a>
+                  <a href="portfolio.html">Portfolio</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="../ommig.html">Om Mig</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="case">
+          <div class="project_case">
+            <span class="subtitle">06.01.01</span>
+            <h1>Portfolio Eksamen</h1>
+          </div>
+          <div class="opgave_case">
+            <span class="subtitle">Opgavefordeling</span>
+            <h2>
+              Programmør<br />Grafisk designer<br />
+              UX & UI
+            </h2>
+          </div>
+          <div class="tema_case">
+            <span class="subtitle">Tema</span>
+            <h2>Tema 6</h2>
+          </div>
+        </div>
+        <div class="themedescrp">
+          <p>
+            I dette afsluttende tema på 1. semester skulle vi udvikle et portfolio website, samt forberede individuel mundtlig præsentation. Til den mundtlige eksamen skal vi demonstrere viden, færdigheder og kompetencer, beskrevet i læringsmålene
+            for 1. semester, og efterfulgt af eksaminationen i portfolio websitet og ens egen præsentationen.
+          </p>
+        </div>
+      </div>
+      <div class="case_descrp">
+        <div class="case_descrp_text">
+          <p>
+            Indledningsvist, skulle jeg beslutte mig for et design til min portfoliohjemmeside. Min reseach fase indebar desk research, for at skaffe inspiration til udseendet af porfoilioet. Jeg valgte hurtigt af Digital modernisktisk inspireret
+            design med præg af modernisme ved brug af meget luft og store marginer. <br />
+            Jeg startede med en tegne nogle løse witeframes før jeg opsatte de første mockups i Adobe XD. I forlængelse af den digitalmodernistiske stilart fik min forside et stort splashbillede med teksten “Multimedie Designer” positionereret oven
+            på billedet, som senere udviklede sig til et automatisk slideshow med JS. Under indsatte jeg en kort byline i h2, som introducerer mig og min “titel” som multimediedesigner studerende på KEA, efterfulft af de tre mest omfattende
+            værktøjer, jeg gør brug af som Multimedie designer. Dernæst indsatte jeg mit portfolio under. Jeg valgte at projekterne skulle være sat simple op med et subtitles i form af det givne tema og projekternes s´navn som tema. <br />
+            Jeg ønskede at min om mig side skulle have et mere ekspressionisktisk. Derfor brød jeg de traditionelle marginer for brødtekst og indskød teksten forskellige, samtdig med at jeg highlitede udvalgt teskt - blandt andet SoMe links og email.
+            <br />
+            Sidst designede jeg mine projektsider. Jeg ønskede at de skulle opsættes i samme design så min metode og beskrivende projekt tekst var det bærende element for alle projektsider. Øverst på siden placerede jeg et grid i 2, 1fr, hvor jeg i
+            child’en til venstre skrev projektnavn, min opgavefordeling, samt hvilket tema projektet indgik i. Til højre i grid placerede jeg en tema tekst.
+          </p>
+
+          <p>
+            Med ovenstående på plads, startede jeg på at skrive mine projekt beskrivelser. Jeg valgte at lægge vægt på processen bag det enkelte projekt med udviddet fokus på de enkelte metoder for det givne tema, frem for selve resultatet, da
+            målgruppen i forvejen havde vurderet dette. Dermed delte jeg også overordnet mine projektbeskrivelse op tre større sektioner. En forberedende fasen, som ofte indholder designstil, koncept wireframes, styletile, mockups og ikke mindst
+            research. Copy og generelt indhold, såsom billedredigering, videoredigering, microcopy mm. Og til sidst skal projekterne implimenteres - enten kodes eller opsættes i XD.
+          </p>
+
+          <p>
+            Afslutningsvis skulle Portfoliohjemmesiden kodes. Jeg implementerede en global menu i toppen af skærmen med CSS position: sticky; og brugte mit navn som et universelt index.html link uanset skærmstørrelsen. “Projekter”-menu punktet i
+            menuen viser desuden en dropdown menu på :hover vha display:block;.<br />
+            Portfoliosiden benytter en hovereffect som viser et temabillede under teksten med en position absolute. <br />
+            På nær forsiden er andre sider sat op i et grid med ni fractions. Her er de to yderste kolonner altid frie. Der er implimenteret mediaqueries generelt med en max-width på 850px så udvalgte sektioner der ikke fylder ud til de to yderste
+            kolloner nu gør ved indskrænket skærm bredde. <br />
+            Hjemmesiden benytte fem separate Javascript. Én ved indskrænkning af skærmstørrelsen hvor menupunkter foldes ind i burgermenu, én for video play controls, én function til scroll top og 2 til de to forskellige slideshow der findes på
+            hjemmesiden.
+          </p>
+        </div>
+      </div>
+      <div class="visit_web_btn">
+        <h2>Vil du se casen?</h2>
+        <a class="button_case" href="https://lundbergbladel.dk/t6/index.html" target="_blank">Besøg lundbergbladel.dk</a>
+      </div>
+      <div class="case_img">
+        <img src="../img/case8-1.jpg" alt="" />
+      </div>
+    </main>
+    <footer>
+      <script src="../js/burgermenu.js"></script>
+      <script src="../js/scrolltop.js"></script>
+    </footer>
+  </body>
+</html>
